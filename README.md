@@ -14,7 +14,7 @@ A simple Person CRUD application using Spring Boot, Next.js, and PostgreSQL. The
 
 - Containerization: Docker
 
-## Getting started
+## Getting started (Docker)
 
 ### 1. Clone repository
 
@@ -23,18 +23,40 @@ git clone https://github.com/fckdyth/person-manager.git
 cd person-manager
 ~~~
 
-### 2. Start app
+### 2. Start the app
 
 ~~~sh
 docker compose -f 'docker-compose.yml' up -d --build
 ~~~
 
-## Access
+### 3. Access
 
-- ### Open browser and go to [localhost:3000](http://localhost:3000)
+- ### Open browser and go to <a href="http://localhost:3000" target="_blank">localhost:3000</a>
 
-- ### API available at [localhost:8080](http://localhost:8080)
+- ### API available at <a href="http://localhost:8080" target="_blank">localhost:8080</a>
+
+### 4. Stop the app
 
 ~~~sh
 docker compose -f 'docker-compose.yml' down 
+~~~
+
+## Manual setup (without Docker)
+
+### 1. Set up PostgreSQL and create the necessary database.
+
+### 2. Start the Spring Boot application
+
+~~~sh
+./gradlew build
+
+./gradlew bootRun
+~~~
+
+### 3. Start the Next.js application
+
+~~~sh
+npm install
+
+npm run dev
 ~~~

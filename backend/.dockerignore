@@ -1,0 +1,33 @@
+# Gradle Wrapper
+.gradle/
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Gradle build output
+/build/
+
+# Java build output
+*.class
+
+# Log files
+*.log
+
+# IDE and editor configuration files
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker-related files
+.dockerignore
+Dockerfile
+
+# Application properties (if they are local to development)
+src/main/resources/application.properties
+
+# Test and temporary files
+*.iml
+*.swp
+*.swo
